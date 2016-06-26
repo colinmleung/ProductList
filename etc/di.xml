@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+     <preference for="Daiga\ProductList\Api\ProductListProviderInterface"
+     	type="Daiga\ProductList\Model\ProductListProvider" />
+     	<preference for="Daiga\ProductList\Api\Data\ProductListInterface"
+     	type="Daiga\ProductList\Model\ProductList" />
+     	<preference for="Daiga\ProductList\Api\Data\ProductListItemInterface"
+     	type="Daiga\ProductList\Model\ProductListItem" />
+     	<preference for="Psr\Log\LoggerInterface" type="Magento\Framework\Logger\Monolog" />
+</config>
